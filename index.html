@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Portfolio</title>
+    <title>Whats4Dinner</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
@@ -11,6 +13,48 @@
     <div class="start">
       <div class="navbar">
         <h1>Whats4Dinner</h1>
+      </div>
+      <div class="boof">
+        <form class="Forms-Outputs" action="/signup/" method ="post">
+          <fieldset>
+            <legend> Let's Find You The Meal Of Your Dreams!</legend>
+            <label for="search">Search</label>
+            <input type="text" name="search" id="search" placeholder="Lean, mean, green vegetable fighting machine"/>
+            <label for="supplements">Supplement</label>
+            <select name="code" > 
+                    <option value="Select" selected>Select</option>
+                    <option value="CA">Calcium</option>
+                    <option value="CHOCDF">Carbs</option>
+                    <option value="CHOLE">Cholesterol</option>
+                    <option value="FAMS">Monounsaturated</option>
+                    <option value="FAPU">Polyunsaturated</option>
+                    <option value="FASAT">Saturated</option>
+                    <option value="FAT">Fat</option>
+                    <option value="FATRN">Trans</option>
+                    <option value="FE">Iron</option>
+                    <option value="FIBTG">Fiber</option>
+                    <option value="FOLDFE">Folate (Equivalent)</option>
+                    <option value="K">Potassium</option>
+                    <option value="MG">Magnesium</option>
+                    <option value="NA">Sodium</option>
+                    <option value="ENERC_KCAL">Energy</option>
+                    <option value="NIA">Niacin (B3)</option>
+                    <option value="P">Phosphorus</option>
+                    <option value="PROCNT">Protein</option>
+                    <option value="RIBF">Riboflavin </option>
+                    <option value="SUGAR">Sugars</option>
+                    <option value="THIA">Thiamin (B1)</option>
+                    <option value="TOCPHA">	Vitamin E</option>
+                    <option value="VITA_RAE">Vitamin A</option>
+                    <option value="VITB12">Vitamin B12</option>
+                    <option value="VITB6A">Vitamin B6</option>
+                    <option value="VITC">Vitamin C</option>
+                    <option value="VITD">Vitamin D</option>
+                    <option value="VITK1">Vitamin K</option>
+            </select>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 

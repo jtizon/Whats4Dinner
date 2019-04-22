@@ -2,43 +2,109 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: #e6e6e6;
-  }
+}
   
-  .navbar {
+.navbar {
     overflow: hidden;
     background-color: #30cc93;
     height: 50px;
     vertical-align: middle;
-  }
+}
   
-  h1{
+h1{
     float: left;
     padding: 10px;
     margin: auto;
     font-size: 20px;
     vertical-align: middle;
-  }
+}
+
+.boof{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height:450px;
+    padding: 40px;
+    background-color: whitesmoke;
+    margin-top: 30px;
+}
+
+.Forms-Outputs legend {
+    width: 100%;
+    line-height: 38px;
+    font-size: 35px;
+    font-weight: 300;
+    color: #565656;
+    text-align: center;
+    letter-spacing: 0;
+    margin: 0 auto 45px;
+}
+
+.Forms-Outputs input{
+    display: block;
+    width: 320px;
+    border: 2px sold gray;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.Forms-Outputs select{
+    display: block;
+    width: 320px;
+    border: 2px sold gray;
+    font-size: 15px;
+    padding: 15px;
   
-  .navbar a{
+}
+  
+.Forms-Outputs button{
+    display: inline-block;
+    background-color: aqua;
+    width: 350px;
+    border:2px;
+    padding: 15px;
+    height: 55px;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    color: gray;
+  }  
+
+.Forms-Outputs label{
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.navbar a{
     float: right;
     padding: 12px;
     margin: auto;
     font-size: 15px;
     vertical-align: middle;
-  }
+}
   
-  .navbar a:hover{
+.navbar a:hover{
     color: #5F65FE;
-  }
+}
   
-  .navbar h1:hover{
+.navbar h1:hover{
     color: #5F65FE;
-  }
-  .button:hover{
+}
+
+.button:hover{
     color: white;
-  }
+}
   
-  .button{
+.button{
     font-size: 24px;
     font-weight: 100;
     color: black;
@@ -53,8 +119,5 @@ body {
     border-radius: 10px;
     background-color: #5F65FE;
     text-decoration: none;
-  }
+}
   
-  .ynab{
-    position: relative;
-  }
