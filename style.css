@@ -67,7 +67,7 @@ h1{
   
 .Forms-Outputs button{
     display: inline-block;
-    background-color: aqua;
+    background-color: #5F65FE;
     width: 350px;
     border:2px;
     padding: 15px;
@@ -76,7 +76,8 @@ h1{
     margin-left: auto;
     margin-right: auto;
     font-size: 25px;
-    color: gray;
+    color: black;
+    border-radius: 5px;
   }  
 
 .Forms-Outputs label{
