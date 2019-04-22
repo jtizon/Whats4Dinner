@@ -21,7 +21,7 @@
             <label for="search">Search</label>
             <input type="text" name="search" id="search" placeholder="Lean, mean, green vegetable fighting machine"/>
             <label for="supplements">Supplement</label>
-            <select name="code" > 
+            <select name="supplement" id="r"> 
                     <option value="Select" selected>Select</option>
                     <option value="CA">Calcium</option>
                     <option value="CHOCDF">Carbs</option>
@@ -52,6 +52,51 @@
                     <option value="VITD">Vitamin D</option>
                     <option value="VITK1">Vitamin K</option>
             </select>
+            <label for="diet">Diet</label>
+            <select name="diet" id="diet"> 
+                    <option value="Select" selected>Select</option>
+                    <option value="balanced">Balanced</option>
+                    <option value="high-fiber">High-Fiber</option>
+                    <option value="high-protein">high-protein</option>
+                    <option value="low-carb">Low-Carb</option>
+                    <option value="low-fat">Low-Fat</option>
+                    <option value="low-sodium">Low-Sodium</option>
+            </select>
+            <label for="health">Health</label>
+            <select name="health" id="health"> 
+                    <option value="Select" selected>Select</option>
+                    <option value="alcohol-free">No Alcohol</option>
+                    <option value="celery-free">No Celery</option>
+                    <option value="crustacean-free">No Crustacean</option>
+                    <option value="dairy-free">No Dairy</option>
+                    <option value="egg-free">No Eggs</option>
+                    <option value="fish-free">No Fish</option>
+                    <option value="gluten-free">Gluten Free</option>
+                    <option value="kidney-friendly">Kidney friendly</option>
+                    <option value="kosher">Kosher</option>
+                    <option value="low-potassium">Low Potassium</option>
+                    <option value="lupine-free">No Lupine</option>
+                    <option value="mustard-free">No Mustard</option>
+                    <option value="No-oil-added">No Oil Added</option>
+                    <option value="low-sugar">No Sugar</option>
+                    <option value="paleo">Paleo</option>
+                    <option value="peanut-free">No Peanuts</option>
+                    <option value="pescatarian">Pescatarian</option>
+                    <option value="pork-free">No Pork</option>
+                    <option value="red-meat-free">No Red Meat</option>
+                    <option value="sesame-free">No Sesame</option>
+                    <option value="shellfish-free">No Shellfish</option>
+                    <option value="soy-free">No Soy</option>
+                    <option value="sugar-conscious">Low Sugar</option>
+                    <option value="tree-nut-free">No Tree Nuts</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="wheat-free">No Wheat</option>
+            </select>
+            <label for="exclude">Exclude</label>
+            <input type="text" name="exclude" id="exclude" placeholder="Anything You Don't Want In Your Dream Meal"/>
+            <label for="cal">Calories</label>
+            <input type="number" name="cal" id="cal" placeholder="Maximum Amount Of Calories For Your Dream Meal"/>
             <button type="submit">Submit</button>
           </fieldset>
         </form>

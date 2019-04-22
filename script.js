@@ -8,11 +8,16 @@ function formatQueryParams(params) {
     return queryItems.join('&');
   }
 
-  function getNationalParks(query, maxResults) {
+  function getNationalParks(query, maxResults, r, diet) {
     const params = {
         app_key: api_Key,
         app_id: app_id,
-        ingr: maxResults,
+        q: query,
+        r: r,
+        diet: diet,
+        health: health,
+        calories: cal,
+        excluded: exclude
     }
     const queryString = formatQueryParams(params);
     const url = searchURL + '?' + queryString;
