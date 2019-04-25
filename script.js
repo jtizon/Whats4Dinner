@@ -72,24 +72,26 @@ function getRecipes(query, code, diet, health, calories, excluded, max) {
       }
       throw new Error(response.statusText);
     })
-    .then(responseJson => displayResults(responseJson, maxResults))
+    .then(responseJson => displayResults(responseJson))
     .catch(err => {
       $('#js-error-message').text(`Something went wrong: ${err.message}`);
     });
+    console.log('getRecipes');
 }
 
-function displayResults(responseJson, maxResults) {
+function displayResults(responseJson) {
   console.log(responseJson);
     
   $('.results').empty();
-  console.log(responseJson.data.length);
-  for (let i = 0; i < responseJson.data.length & i<maxResults ; i++){
+  console.log(responseJson.hits.length);
+  for (let i = 0; i < responseJson.hits.length ; i++){
     console.log('Start');
-    console.log(responseJson.data[1].url);
+    console.log(responseJson.hits[i].recipe.url);
     $('.results').append(
-      `<li><h3><a href="${responseJson.data[i].url}">${responseJson.data[i].url}</a></h3>
-      <p>${responseJson.data[i].fullName}</p>
-      <p>${responseJson.data[i].description}</p>
+      `<li><h3><a href="${responseJson.hits[i].url}">${responseJson.hits[i].recipe.url}</a></h3>
+      <p>${responseJson.hits[i].recipe.label}</p>
+      <p>${responseJson.hits[i].recipe.healthLabels}</p>
+      <p>${responseJson.hits[i].recipe.ingredientLines}</p>
       </li>`
     )};
   console.log('Finished');
