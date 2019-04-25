@@ -10,7 +10,7 @@ body {
     height: 50px;
     vertical-align: middle;
     font-family: 'Pacifico', cursive;
-    font-weight: 200;
+    font-weight: 800;
 }
   
 input, select{
@@ -120,7 +120,7 @@ fieldset {
     color: #5F65FE;
 }
 
-.button:hover{
+button:hover{
     color: white;
 }
   
