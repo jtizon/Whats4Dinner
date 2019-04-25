@@ -32,12 +32,8 @@ function getRecipes(query, code, diet, health, calories, excluded, max) {
   let elength = excluded.length;
   const params = new function(){
     const object = {};
-    if(id.length > 0){
-      object.app_id = id;
-    }
-    if(key.length > 0){
-      object.app_key = key;
-    }
+    object.app_id = id;
+    object.app_key = key;
     if(qlength > 0){
       object.q = query;
     }
