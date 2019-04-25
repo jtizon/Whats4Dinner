@@ -98,5 +98,3 @@ function displayResults(responseJson) {
 }
 
 getValue();
-
-//Hello
