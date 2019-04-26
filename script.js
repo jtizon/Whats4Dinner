@@ -99,5 +99,3 @@ function displayResults(responseJson) {
 }
 
 getValue();
-
-//Test
