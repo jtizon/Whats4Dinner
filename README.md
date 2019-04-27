@@ -1,6 +1,5 @@
 # Whats4Dinner
-https://jtizon.github.io/Whats4Dinner/ - automatic!
-[GitHub](https://jtizon.github.io/Whats4Dinner/)
+[Whats4Dinner](https://jtizon.github.io/Whats4Dinner/)
 ![Image of Search Form](searchscreenshot.JPG)
 ![Image of Results Page](resultscreenshot.JPG)
 ## About
