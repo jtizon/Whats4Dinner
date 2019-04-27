@@ -139,6 +139,7 @@ button:hover{
     border-radius: 10px;
     background-color: #5F65FE;
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul {
