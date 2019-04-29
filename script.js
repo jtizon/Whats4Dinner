@@ -89,8 +89,9 @@ function displayResults(responseJson) {
     console.log(responseJson.hits[i].recipe.url);
     $('.results').append(
       `<h2 class="title">${responseJson.hits[i].recipe.label}</h2>
-      <img src="${responseJson.hits[i].recipe.image}">
-      <li><h3><a href="${responseJson.hits[i].recipe.url}">${responseJson.hits[i].recipe.url}</a></h3>
+      <a href="${responseJson.hits[i].recipe.url}">
+        <img src="${responseJson.hits[i].recipe.image}">
+      </a>
       <p>${responseJson.hits[i].recipe.healthLabels}</p>
       <p>${responseJson.hits[i].recipe.ingredientLines}</p>
       </li>`
