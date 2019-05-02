@@ -84,19 +84,27 @@ function displayResults(responseJson) {
     
   $('.results').empty();
   console.log(responseJson.hits.length);
-  for (let i = 0; i < responseJson.hits.length ; i++){
-    console.log('Start');
-    console.log(responseJson.hits[i].recipe.url);
+  if(responseJson.hits.length > 0){
+    for (let i = 0; i < responseJson.hits.length ; i++){
+      console.log('Start');
+      console.log(responseJson.hits[i].recipe.url);
+      $('.results').append(
+        `<h2 class="title">${responseJson.hits[i].recipe.label}</h2>
+        <a href="${responseJson.hits[i].recipe.url}">
+          <img src="${responseJson.hits[i].recipe.image}">
+        </a>
+        <p>${responseJson.hits[i].recipe.healthLabels}</p>
+        <p>${responseJson.hits[i].recipe.ingredientLines}</p>
+        </li>`
+      )};
+    console.log('Finished');
+  }
+  else{
     $('.results').append(
-      `<h2 class="title">${responseJson.hits[i].recipe.label}</h2>
-      <a href="${responseJson.hits[i].recipe.url}">
-        <img src="${responseJson.hits[i].recipe.image}">
-      </a>
-      <p>${responseJson.hits[i].recipe.healthLabels}</p>
-      <p>${responseJson.hits[i].recipe.ingredientLines}</p>
-      </li>`
-    )};
-  console.log('Finished');
+      `<header> Sorry no results were found! Please Try Again!`
+    )
+  }
+  window.scrollTo(0, 1150);
 }
 
 getValue();
