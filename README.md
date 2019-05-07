@@ -11,10 +11,3 @@ Within the Whats4Dinner app, users are able to search for their dream meal. This
 * JavaScript
 * jQuery
 
-<select name="diet" id="diet"> 
-                    <option value="Select" selected>Select</option>
-                    <option value="balanced">Balanced</option>
-                    <option value="high-protein">High-protein</option>
-                    <option value="low-carb">Low-Carb</option>
-                    <option value="low-fat">Low-Fat</option>
-            </select>

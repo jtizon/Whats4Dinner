@@ -109,6 +109,4 @@ function displayResults(responseJson) {
 
 getValue();
 
-//Hello this is a test
-//Trying to find out what laptop I want
 
